@@ -1,0 +1,3 @@
+/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex3/cmake-build-debug/CMakeFiles/ex3.dir
+/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex3/cmake-build-debug/CMakeFiles/edit_cache.dir

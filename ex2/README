@@ -1,0 +1,39 @@
+mohammadgh, ameersa
+Mohammad Ghanayem (208653220), Ameer Sayed Ahmad (209334929)
+EX: 2
+
+FILES:
+uthreads.cpp
+
+REMARKS:
+
+ANSWERS:
+Part 2:
+Q1:
+A general and recommended use of user-level threads would be dealling with high amount of transitions,
+for example using applications while playing music in the background or downloading something.
+in this case using users-level thread is more efiicent because it takes less time, between the threads, than in the kernel mode.
+
+Q2:
+Disadvantages:
+* It requires more resources and memory than threads.
+* larger overhead,Process Context switch has larger overhead than thread context switch.
+
+Advantages:
+* In this way each tab runs independently, so any problem or error happens will affect just one tab and not all the tabs.
+* Failing in one process will not affect the others.
+* By creating a new processes, each one have a different memory so processes have more resources.
+* Process can create multi-threads inside,so get some advantages of multi-threaded programing.
+
+Q3:
+We send external interrupt to the operating system, that
+sends signal to the process, and the process handle the signal by terminating itself.
+
+Q4:
+'real' time is continuous, it is counted in each process.
+'virtual' time not continuous, it is counted during the time of the process active computation time.
+
+real time example: the operating system clock application utilizes a real time
+timer that keeps counting regardless of the process currently active.
+virtual time example:o measure the runtime of a single process in order to analyze its own running time.
+the scheduler algorithm uses virtual time to coordinate between two (or more) processes.

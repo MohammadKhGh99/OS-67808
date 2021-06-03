@@ -1,0 +1,18 @@
+mohammadgh, ameersa
+Mohammad Ghanayem (208653220), Ameer Sayed Ahmad (209334929)
+EX: 1
+
+FILES:
+
+REMARKS:
+
+ANSWERS:
+Assignment 1:
+First of all the program makes a new directory called Welcome, then it will create another directory in the Welcome
+directory called To, then the program creates a file (if not exists) called OS2021 in To directory and opens
+it in write only mode, then it will write in it the following message "mohammadgh\nIf you haven't read the course
+guidelines yet --- do it right now!\n<the argument that has been given to the program>", then it
+will close the file and remove the OS2021 file from the directory To then removing To and Welcome directories and
+exiting th system.
+If we run strace os WhatIDo without an argument a message appears saying "Error. The program should receive a single
+argument. Exiting.\n"  then the message ": Success\n" and exit.
