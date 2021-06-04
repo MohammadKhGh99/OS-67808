@@ -250,6 +250,33 @@ Barrier/barrierdemo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Barrier/barrierdemo.cpp.s
 .PHONY : Barrier/barrierdemo.cpp.s
 
+MapReduceFramework.o: MapReduceFramework.cpp.o
+
+.PHONY : MapReduceFramework.o
+
+# target to build an object file
+MapReduceFramework.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/MapReduceFramework.cpp.o
+.PHONY : MapReduceFramework.cpp.o
+
+MapReduceFramework.i: MapReduceFramework.cpp.i
+
+.PHONY : MapReduceFramework.i
+
+# target to preprocess a source file
+MapReduceFramework.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/MapReduceFramework.cpp.i
+.PHONY : MapReduceFramework.cpp.i
+
+MapReduceFramework.s: MapReduceFramework.cpp.s
+
+.PHONY : MapReduceFramework.s
+
+# target to generate assembly for a file
+MapReduceFramework.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/MapReduceFramework.cpp.s
+.PHONY : MapReduceFramework.cpp.s
+
 Sample_Client/SampleClient.o: Sample_Client/SampleClient.cpp.o
 
 .PHONY : Sample_Client/SampleClient.o
@@ -298,6 +325,9 @@ help:
 	@echo "... Barrier/barrierdemo.o"
 	@echo "... Barrier/barrierdemo.i"
 	@echo "... Barrier/barrierdemo.s"
+	@echo "... MapReduceFramework.o"
+	@echo "... MapReduceFramework.i"
+	@echo "... MapReduceFramework.s"
 	@echo "... Sample_Client/SampleClient.o"
 	@echo "... Sample_Client/SampleClient.i"
 	@echo "... Sample_Client/SampleClient.s"
