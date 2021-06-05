@@ -82,7 +82,7 @@ struct JobContext
 	std::vector<ThreadContext> _threadContexts;
 	std::vector<MyThread *> _threads;
 	std::vector<K2*> _keys{};
-	Inter
+	IntermediateVec _vec{};
 };
 
 
@@ -107,8 +107,11 @@ void reduce(void *context)  // todo const IntermediateVec *pairs,
 {
 	auto contextC = (ThreadContext*) context;
 	auto job = contextC->_job;
+	IntermediateVec vec;
+	K2* key = job->_keys.back();
 	for (; job->_numReduce < job->_keys.size(); ++job->_numReduce)
 	{
+
 		int reduNu = job->_numReduce;
 		job->_client.reduce(job->_keys[reduNu], job.);
 		job->_numMapFinish++;
@@ -126,7 +129,7 @@ void* mapFunc(void* context)
 	for (; contextC->_job->_numMap < contextC->_job->_inputVec.size(); ++contextC->_job->_numMap)
 	{
 		contextC->_pair = contextC->_job->_inputVec[contextC->_job->_numMap];
-		contextC->_job->_client.map(contextC->_pair.first, contextC->_pair.second, threadContext);
+		contextC->_job->_client.map(contextC->_pair.first, contextC->_pair.second, context);
 		contextC->_job->_numMapFinish++;
 	}
 	contextC->_job->_barrier->barrier();
