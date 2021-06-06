@@ -142,60 +142,6 @@ ex3/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/build
 .PHONY : ex3/fast
 
-Atomic/atomicdemo.o: Atomic/atomicdemo.cpp.o
-
-.PHONY : Atomic/atomicdemo.o
-
-# target to build an object file
-Atomic/atomicdemo.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Atomic/atomicdemo.cpp.o
-.PHONY : Atomic/atomicdemo.cpp.o
-
-Atomic/atomicdemo.i: Atomic/atomicdemo.cpp.i
-
-.PHONY : Atomic/atomicdemo.i
-
-# target to preprocess a source file
-Atomic/atomicdemo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Atomic/atomicdemo.cpp.i
-.PHONY : Atomic/atomicdemo.cpp.i
-
-Atomic/atomicdemo.s: Atomic/atomicdemo.cpp.s
-
-.PHONY : Atomic/atomicdemo.s
-
-# target to generate assembly for a file
-Atomic/atomicdemo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Atomic/atomicdemo.cpp.s
-.PHONY : Atomic/atomicdemo.cpp.s
-
-Atomic/atomicdemo_multivar.o: Atomic/atomicdemo_multivar.cpp.o
-
-.PHONY : Atomic/atomicdemo_multivar.o
-
-# target to build an object file
-Atomic/atomicdemo_multivar.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Atomic/atomicdemo_multivar.cpp.o
-.PHONY : Atomic/atomicdemo_multivar.cpp.o
-
-Atomic/atomicdemo_multivar.i: Atomic/atomicdemo_multivar.cpp.i
-
-.PHONY : Atomic/atomicdemo_multivar.i
-
-# target to preprocess a source file
-Atomic/atomicdemo_multivar.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Atomic/atomicdemo_multivar.cpp.i
-.PHONY : Atomic/atomicdemo_multivar.cpp.i
-
-Atomic/atomicdemo_multivar.s: Atomic/atomicdemo_multivar.cpp.s
-
-.PHONY : Atomic/atomicdemo_multivar.s
-
-# target to generate assembly for a file
-Atomic/atomicdemo_multivar.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Atomic/atomicdemo_multivar.cpp.s
-.PHONY : Atomic/atomicdemo_multivar.cpp.s
-
 Barrier/Barrier.o: Barrier/Barrier.cpp.o
 
 .PHONY : Barrier/Barrier.o
@@ -277,33 +223,6 @@ MapReduceFramework.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/MapReduceFramework.cpp.s
 .PHONY : MapReduceFramework.cpp.s
 
-Sample_Client/SampleClient.o: Sample_Client/SampleClient.cpp.o
-
-.PHONY : Sample_Client/SampleClient.o
-
-# target to build an object file
-Sample_Client/SampleClient.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Sample_Client/SampleClient.cpp.o
-.PHONY : Sample_Client/SampleClient.cpp.o
-
-Sample_Client/SampleClient.i: Sample_Client/SampleClient.cpp.i
-
-.PHONY : Sample_Client/SampleClient.i
-
-# target to preprocess a source file
-Sample_Client/SampleClient.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Sample_Client/SampleClient.cpp.i
-.PHONY : Sample_Client/SampleClient.cpp.i
-
-Sample_Client/SampleClient.s: Sample_Client/SampleClient.cpp.s
-
-.PHONY : Sample_Client/SampleClient.s
-
-# target to generate assembly for a file
-Sample_Client/SampleClient.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Sample_Client/SampleClient.cpp.s
-.PHONY : Sample_Client/SampleClient.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -313,12 +232,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ex3"
-	@echo "... Atomic/atomicdemo.o"
-	@echo "... Atomic/atomicdemo.i"
-	@echo "... Atomic/atomicdemo.s"
-	@echo "... Atomic/atomicdemo_multivar.o"
-	@echo "... Atomic/atomicdemo_multivar.i"
-	@echo "... Atomic/atomicdemo_multivar.s"
 	@echo "... Barrier/Barrier.o"
 	@echo "... Barrier/Barrier.i"
 	@echo "... Barrier/Barrier.s"
@@ -328,9 +241,6 @@ help:
 	@echo "... MapReduceFramework.o"
 	@echo "... MapReduceFramework.i"
 	@echo "... MapReduceFramework.s"
-	@echo "... Sample_Client/SampleClient.o"
-	@echo "... Sample_Client/SampleClient.i"
-	@echo "... Sample_Client/SampleClient.s"
 .PHONY : help
 
 

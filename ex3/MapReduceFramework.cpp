@@ -10,6 +10,7 @@
 #include <vector>
 #include <iostream>
 #include <semaphore.h>
+#include <algorithm>
 
 #define ERR_CREATE "system error: Error in pthread_create function!"
 #define ERR_LOAD "system error: Error in std::atomic load function!"
@@ -20,6 +21,8 @@
 //typedef struct ThreadContext ThreadContext;
 typedef struct MyThread MyThread;
 typedef struct JobContext JobContext;
+
+std::vector<IntermediateVec> vectorVectors;
 
 
 struct MyThread
@@ -100,6 +103,26 @@ static void system_library_exit(const std::string& msg)
 //
 //}
 
+bool sortHelper(IntermediatePair first, IntermediatePair second)
+{
+	return first.first->operator<(*second.first);
+}
+
+void sorting(void *context)
+{
+	auto contextC = (ThreadContext*) context;
+	if (pthread_mutex_lock(&contextC->_mutex) != 0)
+		system_library_exit(ERR_MUTEX);
+	// todo like this or change to contextC._vec ??
+	std::sort(contextC->_job->_threadContexts[contextC->id]._vec.begin(),
+			  contextC->_job->_threadContexts[contextC->id]._vec.end(), sortHelper);
+	if (pthread_mutex_unlock(&contextC->_mutex) != 0)
+	{
+		system_library_exit(ERR_MUTEX);
+	}
+}
+
+
 // gets a single K2 key and a vector of all its respective V2 values
 // calls emit3(K3, V3, context) any number of times (usually once)
 // to output (K3, V3) pairs.
@@ -113,14 +136,33 @@ void reduce(void *context)  // todo const IntermediateVec *pairs,
 	{
 
 		int reduNu = job->_numReduce;
-		job->_client.reduce(job->_keys[reduNu], job.);
+//		job->_client.reduce(job->_keys[reduNu], job.);
 		job->_numMapFinish++;
 	}
 }
 
 void* shuffle(void* context)
 {
-
+	auto contextC = (JobContext *)context;
+//	if (contextC->id != 0)
+//	{
+//		return nullptr;
+//	}
+	while (!contextC->_vec.empty())
+	{
+		IntermediateVec curVec;
+		IntermediatePair cur = contextC->_vec.back();
+		contextC->_vec.pop_back();
+		curVec.push_back(cur);
+		while (!sortHelper(cur, contextC->_vec.back()) && !sortHelper(contextC->_vec.back(), cur))
+		{
+			curVec.push_back(contextC->_vec.back());
+			contextC->_vec.pop_back();
+			if (contextC->_vec.empty())
+				break;
+		}
+	}
+	return nullptr;
 }
 
 void* mapFunc(void* context)
@@ -128,12 +170,25 @@ void* mapFunc(void* context)
 	auto contextC = (ThreadContext*) context;
 	for (; contextC->_job->_numMap < contextC->_job->_inputVec.size(); ++contextC->_job->_numMap)
 	{
+		if (pthread_mutex_lock(&contextC->_mutex) != 0)
+			system_library_exit(ERR_MUTEX);
 		contextC->_pair = contextC->_job->_inputVec[contextC->_job->_numMap];
 		contextC->_job->_client.map(contextC->_pair.first, contextC->_pair.second, context);
 		contextC->_job->_numMapFinish++;
+		if (pthread_mutex_unlock(&contextC->_mutex) != 0)
+			system_library_exit(ERR_MUTEX);
 	}
+	sorting(context);
 	contextC->_job->_barrier->barrier();
+	sem_t thread0;
+	sem_init(&thread0, 0, 0);
+//	shuffle(context);
+	if (contextC->id == 0)
+	{
+		shuffle(context);
+	}
 	reduce(context);
+	return nullptr;
 }
 
 /**

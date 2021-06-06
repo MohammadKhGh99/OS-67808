@@ -93,12 +93,12 @@ clean: CMakeFiles/ex3.dir/clean
 CMakeFiles/ex3.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex3/cmake-build-debug/CMakeFiles" --progress-num=1,2,3,4,5,6,7 "Built target ex3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex3/cmake-build-debug/CMakeFiles" --progress-num=1,2,3,4 "Built target ex3"
 .PHONY : CMakeFiles/ex3.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ex3.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex3/cmake-build-debug/CMakeFiles" 7
+	$(CMAKE_COMMAND) -E cmake_progress_start "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex3/cmake-build-debug/CMakeFiles" 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex3.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex3/cmake-build-debug/CMakeFiles" 0
 .PHONY : CMakeFiles/ex3.dir/rule

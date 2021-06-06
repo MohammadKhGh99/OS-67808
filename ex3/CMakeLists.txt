@@ -7,12 +7,13 @@ include_directories(.)
 include_directories(Barrier)
 
 add_executable(ex3
-        Atomic/atomicdemo.cpp
-        Atomic/atomicdemo_multivar.cpp
+#        Atomic/atomicdemo.cpp
+#        Atomic/atomicdemo_multivar.cpp
         Barrier/Barrier.cpp
         Barrier/Barrier.h
         Barrier/barrierdemo.cpp
-        "Sample Client/SampleClient.cpp"
+#        "Sample Client/SampleClient.cpp"
         MapReduceClient.h
         MapReduceFramework.h
-        MapReduceFramework.cpp)
+        MapReduceFramework.cpp
+        )
