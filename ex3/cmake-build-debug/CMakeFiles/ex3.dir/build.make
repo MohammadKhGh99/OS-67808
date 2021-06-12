@@ -76,9 +76,22 @@ include CMakeFiles/ex3.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/ex3.dir/flags.make
 
+CMakeFiles/ex3.dir/Atomic/atomicdemo.cpp.o: CMakeFiles/ex3.dir/flags.make
+CMakeFiles/ex3.dir/Atomic/atomicdemo.cpp.o: ../Atomic/atomicdemo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex3/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ex3.dir/Atomic/atomicdemo.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/Atomic/atomicdemo.cpp.o -c "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex3/Atomic/atomicdemo.cpp"
+
+CMakeFiles/ex3.dir/Atomic/atomicdemo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex3.dir/Atomic/atomicdemo.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex3/Atomic/atomicdemo.cpp" > CMakeFiles/ex3.dir/Atomic/atomicdemo.cpp.i
+
+CMakeFiles/ex3.dir/Atomic/atomicdemo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex3.dir/Atomic/atomicdemo.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex3/Atomic/atomicdemo.cpp" -o CMakeFiles/ex3.dir/Atomic/atomicdemo.cpp.s
+
 CMakeFiles/ex3.dir/Barrier/Barrier.cpp.o: CMakeFiles/ex3.dir/flags.make
 CMakeFiles/ex3.dir/Barrier/Barrier.cpp.o: ../Barrier/Barrier.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex3/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ex3.dir/Barrier/Barrier.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex3/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ex3.dir/Barrier/Barrier.cpp.o"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/Barrier/Barrier.cpp.o -c "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex3/Barrier/Barrier.cpp"
 
 CMakeFiles/ex3.dir/Barrier/Barrier.cpp.i: cmake_force
@@ -88,19 +101,6 @@ CMakeFiles/ex3.dir/Barrier/Barrier.cpp.i: cmake_force
 CMakeFiles/ex3.dir/Barrier/Barrier.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex3.dir/Barrier/Barrier.cpp.s"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex3/Barrier/Barrier.cpp" -o CMakeFiles/ex3.dir/Barrier/Barrier.cpp.s
-
-CMakeFiles/ex3.dir/Barrier/barrierdemo.cpp.o: CMakeFiles/ex3.dir/flags.make
-CMakeFiles/ex3.dir/Barrier/barrierdemo.cpp.o: ../Barrier/barrierdemo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex3/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ex3.dir/Barrier/barrierdemo.cpp.o"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/Barrier/barrierdemo.cpp.o -c "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex3/Barrier/barrierdemo.cpp"
-
-CMakeFiles/ex3.dir/Barrier/barrierdemo.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex3.dir/Barrier/barrierdemo.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex3/Barrier/barrierdemo.cpp" > CMakeFiles/ex3.dir/Barrier/barrierdemo.cpp.i
-
-CMakeFiles/ex3.dir/Barrier/barrierdemo.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex3.dir/Barrier/barrierdemo.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex3/Barrier/barrierdemo.cpp" -o CMakeFiles/ex3.dir/Barrier/barrierdemo.cpp.s
 
 CMakeFiles/ex3.dir/MapReduceFramework.cpp.o: CMakeFiles/ex3.dir/flags.make
 CMakeFiles/ex3.dir/MapReduceFramework.cpp.o: ../MapReduceFramework.cpp
@@ -117,15 +117,15 @@ CMakeFiles/ex3.dir/MapReduceFramework.cpp.s: cmake_force
 
 # Object files for target ex3
 ex3_OBJECTS = \
+"CMakeFiles/ex3.dir/Atomic/atomicdemo.cpp.o" \
 "CMakeFiles/ex3.dir/Barrier/Barrier.cpp.o" \
-"CMakeFiles/ex3.dir/Barrier/barrierdemo.cpp.o" \
 "CMakeFiles/ex3.dir/MapReduceFramework.cpp.o"
 
 # External object files for target ex3
 ex3_EXTERNAL_OBJECTS =
 
+ex3.exe: CMakeFiles/ex3.dir/Atomic/atomicdemo.cpp.o
 ex3.exe: CMakeFiles/ex3.dir/Barrier/Barrier.cpp.o
-ex3.exe: CMakeFiles/ex3.dir/Barrier/barrierdemo.cpp.o
 ex3.exe: CMakeFiles/ex3.dir/MapReduceFramework.cpp.o
 ex3.exe: CMakeFiles/ex3.dir/build.make
 ex3.exe: CMakeFiles/ex3.dir/link.txt

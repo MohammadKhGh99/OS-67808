@@ -84,13 +84,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex3/Atomic/atomicdemo.cpp">
+			<Option target="ex3"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex3/Barrier/Barrier.cpp">
 			<Option target="ex3"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex3/Barrier/Barrier.h">
-			<Option target="ex3"/>
-		</Unit>
-		<Unit filename="/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex3/Barrier/barrierdemo.cpp">
 			<Option target="ex3"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex3/MapReduceClient.h">
