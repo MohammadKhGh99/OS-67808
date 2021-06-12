@@ -1,0 +1,22 @@
+mkdir("Welcome", 0775):
+creates a directory named : Welcome
+mkdir("Welcome/To", 0775):
+creates another directory inside Welcome named To
+openat(AT_FDCWD, "Welcome/To/OS2020", O_WRONLY|O_CREAT|O_TRUNC, 0666):
+the directory TO is empty therefore this command creates a new file named OS2020
+"A call to create() is equivalent to calling open() with flags equal to O_WRONLY|O_CREAT|O_TRUNC"
+write(3, "sarahhegazi\nIf you haven't read "..., 82) :
+writes in the file OS2020 string of size 82(the length of the string depending on the user name) byte 
+it writes the following: "username\n If you haven't read the <arguemnt>....( open the created file and write something)
+close(3): close the file OS2020
+unlink("Welcome/To/OS2020") :
+delets the file OS2020
+rmdir("Welcome/To/"):
+remove\delete the directory To
+rmdir("Welcome/"):
+delets the directory Welcome
+In Short:
+the program creates two directories Welcome/To, creates a file OS2020 write a string, then deletes
+the file and the directories.
+when running the program without any input it writes an error message:"Error.The program should receive a single argumen."
+Note:i didn't mention fstat, i think it's not mandatory to describe what it does.

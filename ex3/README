@@ -1,0 +1,14 @@
+mohammadgh, ameersa
+Mohammad Ghanayem (208653220), Ameer Sayed Ahmad (209334929)
+EX: 3
+
+FILES:
+MapReduceFramework.cpp - The implementation of the MapReduceFramework (of its header in the resources).
+Barrier.h - The barrier header that was given in the EX3 resources.
+Barrier.cpp - The barrier implementation that was given in the EX3 resources.
+Makefile - This file made for easily compile our project by the keyword "make".
+README - this file
+
+REMARKS: none.
+
+ANSWERS: There were no questions.

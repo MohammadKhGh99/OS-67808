@@ -1,0 +1,30 @@
+kamal157, sarahhegazi
+kamal agbaria (314782806), sarah hegazi (206711236)
+EX: 3
+FILES:
+Makefile
+README - this file
+Barrier.h
+Barrier.cpp
+MapReduceFramework.cpp - implementation of the MapReduce algorithm
+fileWordCounter_comparison.PNG - plot of the run time as a function of multiThreadLevel.
+
+REMARKS:
+FileWordCounter explanation:
+increasing multiThreadLevel will decrease the running time of the program, when adding more threads we divide the job
+among more threads this way we have more work that can be done concurrently, thus decreasing the running time.
+but, at some point increasing multiThreadLevel won't affect the run time (or even increases it), since as the number
+of thread increases the overhead of context switch will increase as well.
+- the testing was done using aquarium computers (connecting to "aquarium" as described in the exercise).
+
+ANSWERS:
+question 1:
+In a CPU-bound application, we would have as many threads as number of processors we
+have, note that having  more threads than the number of processors make little sense,
+since we will likely to have a very high overhead of context switching between threads.
+
+question 2:
+1) Will be printed 2n lines.
+2) The first n lines are printed in fixed order: "i: after barrier pid: 0" ∀ i ∈[0,n-1]
+The order of the rest of lines is not deterministic, we have (n!) different options (any order is possible).
+

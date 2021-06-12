@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g -Wl,--enable-auto-import CMakeFiles/mattanTester.dir/SampleClient.cpp.o -o mattanTester.exe -Wl,--out-implib,libmattanTester.dll.a -Wl,--major-image-version,0,--minor-image-version,0  ../libMapReduceFramework.a ../lib/libgtest_maind.a ../lib/libgtestd.a 
