@@ -7,6 +7,7 @@ word_t frameReturner(uint64_t virtualAddress, word_t *path, int index);
 void frameFinding(uint64_t table, uint64_t index, word_t *path, uint64_t *emptyPage, uint64_t *array, int depth = 0,
 				  uint64_t frame = 0, uint64_t page = 0, uint64_t parent = 0);
 int distance(uint64_t firstPage, uint64_t secondPage);
+uint64_t physicalAddress(uint64_t virtualAddress);
 // ------------------ Functions Declarations (End) ------------------ //
 void clearTable(uint64_t frameIndex)
 {
@@ -37,27 +38,28 @@ int VMread(uint64_t virtualAddress, word_t *value)
 		return 0;
 	}
 	/////////////////////////////
-	uint64_t newAddress, frame = virtualAddress, offset = frame % (int) pow(2, OFFSET_WIDTH);
-	bool flag = false;
-	word_t path[TABLES_DEPTH + 1];
-	path[0] = 0;
-	for (int i = 0; i < TABLES_DEPTH; ++i)
-	{
-		int x = pow(2, OFFSET_WIDTH * (TABLES_DEPTH - i));  // todo change to double or not?
-		int j = frame / x;
-		frame %= x;
-		PMread(PAGESIZE * path[i] + j, &path[i + 1]);
-		if (path[i + 1] == 0) //todo did you mean this or I have to add "!" ?
-		{
-			PMwrite(PAGE_SIZE * path[i] + j, frameReturner(virtualAddress, path, i + 1));
-			flag = true;
-		}
-	}
-	if (flag)
-	{
-		PMrestore(path[TABLES_DEPTH], virtualAddress / PAGE_SIZE);
-	}
-	newAddress = PAGE_SIZE * path[TABLES_DEPTH] + offset;
+	uint64_t newAddress = physicalAddress(virtualAddress);
+//	uint64_t newAddress, frame = virtualAddress, offset = frame % (int) pow(2, OFFSET_WIDTH);
+//	bool flag = false;
+//	word_t path[TABLES_DEPTH + 1];
+//	path[0] = 0;
+//	for (int i = 0; i < TABLES_DEPTH; ++i)
+//	{
+//		int x = pow(2, OFFSET_WIDTH * (TABLES_DEPTH - i));  // todo change to double or not?
+//		int j = frame / x;
+//		frame %= x;
+//		PMread(PAGESIZE * path[i] + j, &path[i + 1]);
+//		if (path[i + 1] == 0) //todo did you mean this or I have to add "!" ?
+//		{
+//			PMwrite(PAGE_SIZE * path[i] + j, frameReturner(virtualAddress, path, i + 1));
+//			flag = true;
+//		}
+//	}
+//	if (flag)
+//	{
+//		PMrestore(path[TABLES_DEPTH], virtualAddress / PAGE_SIZE);
+//	}
+//	newAddress = PAGE_SIZE * path[TABLES_DEPTH] + offset;
 	////////////////////////////
 	PMread(newAddress, value);
 	return 1;
@@ -76,27 +78,28 @@ int VMwrite(uint64_t virtualAddress, word_t value)
 		return 0;
 	}
 	////////////////////////
-	uint64_t newAddress, frame = virtualAddress, offset = frame % (int) pow(2, OFFSET_WIDTH);
-	bool flag = false;
-	word_t path[TABLES_DEPTH + 1];
-	path[0] = 0;
-	for (int i = 0; i < TABLES_DEPTH; ++i)
-	{
-		int x = pow(2, OFFSET_WIDTH * (TABLES_DEPTH - i));  // todo change to double or not?
-		int j = frame / x;
-		frame %= x;
-		PMread(PAGESIZE * path[i] + j, &path[i + 1]);
-		if (path[i + 1] == 0) //todo did you mean this or I have to add "!" ?
-		{
-			PMwrite(PAGE_SIZE * path[i] + j, frameReturner(virtualAddress, path, i + 1));
-			flag = true;
-		}
-	}
-	if (flag)
-	{
-		PMrestore(path[TABLES_DEPTH], virtualAddress / PAGE_SIZE);
-	}
-	newAddress = PAGE_SIZE * path[TABLES_DEPTH] + offset;
+	uint64_t newAddress = physicalAddress(virtualAddress);
+//	uint64_t newAddress, frame = virtualAddress, offset = frame % (int) pow(2, OFFSET_WIDTH);
+//	bool flag = false;
+//	word_t path[TABLES_DEPTH + 1];
+//	path[0] = 0;
+//	for (int i = 0; i < TABLES_DEPTH; ++i)
+//	{
+//		int x = pow(2, OFFSET_WIDTH * (TABLES_DEPTH - i));  // todo change to double or not?
+//		int j = frame / x;
+//		frame %= x;
+//		PMread(PAGESIZE * path[i] + j, &path[i + 1]);
+//		if (path[i + 1] == 0) //todo did you mean this or I have to add "!" ?
+//		{
+//			PMwrite(PAGE_SIZE * path[i] + j, frameReturner(virtualAddress, path, i + 1));
+//			flag = true;
+//		}
+//	}
+//	if (flag)
+//	{
+//		PMrestore(path[TABLES_DEPTH], virtualAddress / PAGE_SIZE);
+//	}
+//	newAddress = PAGE_SIZE * path[TABLES_DEPTH] + offset;
 	////////////////////////
 	PMwrite(newAddress, value);
 	return 1;
@@ -166,9 +169,9 @@ void frameFinding(uint64_t table, uint64_t index, word_t *path, uint64_t *emptyP
 		if (tmpEmptyPage == 1)
 		{
 			// Finding Empty Page.
-			for (int i = 0; i < index; ++i)
+			for (uint64_t i = 0; i < index; ++i)
 			{
-				if (path[i] == frame)
+				if ((uint64_t) path[i] == frame)
 				{
 					(*emptyPage) = 0;
 					return;
@@ -190,6 +193,32 @@ int distance(uint64_t firstPage, uint64_t secondPage)
 	int x = abs((int) (firstPage - secondPage));
 	int y = NUM_PAGES - x;
 	return x >= y ? y : x;
+}
+
+uint64_t physicalAddress(uint64_t virtualAddress)
+{
+	uint64_t newAddress, frame = virtualAddress, offset = frame % (int) pow(2, OFFSET_WIDTH);
+	bool flag = false;
+	word_t path[TABLES_DEPTH + 1];
+	path[0] = 0;
+	for (int i = 0; i < TABLES_DEPTH; ++i)
+	{
+		int x = pow(2, OFFSET_WIDTH * (TABLES_DEPTH - i));  // todo change to double or not?
+		int j = frame / x;
+		frame %= x;
+		PMread(PAGESIZE * path[i] + j, &path[i + 1]);
+		if (path[i + 1] == 0) //todo did you mean this or I have to add "!" ?
+		{
+			PMwrite(PAGE_SIZE * path[i] + j, frameReturner(virtualAddress, path, i + 1));
+			flag = true;
+		}
+	}
+	if (flag)
+	{
+		PMrestore(path[TABLES_DEPTH], virtualAddress / PAGE_SIZE);
+	}
+	newAddress = PAGE_SIZE * path[TABLES_DEPTH] + offset;
+	return newAddress;
 }
 
 // ------------------ Helping Functions (End) ------------------ //
