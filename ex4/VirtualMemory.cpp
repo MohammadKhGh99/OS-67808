@@ -49,13 +49,17 @@ int VMread(uint64_t virtualAddress, word_t *value)
 		PMread(PAGESIZE * path[i] + j, &path[i + 1]);
 		if (path[i + 1] == 0) //todo did you mean this or I have to add "!" ?
 		{
-			word_t v;
-
+			PMwrite(PAGE_SIZE * path[i] + j, frameReturner(virtualAddress, path, i + 1));
+			flag = true;
 		}
-
 	}
+	if (flag)
+	{
+		PMrestore(path[TABLES_DEPTH], virtualAddress / PAGE_SIZE);
+	}
+	newAddress = PAGE_SIZE * path[TABLES_DEPTH] + offset;
 	////////////////////////////
-	PMwrite(newAddress, *value);
+	PMread(newAddress, value);
 	return 1;
 }
 
@@ -67,6 +71,34 @@ int VMread(uint64_t virtualAddress, word_t *value)
  */
 int VMwrite(uint64_t virtualAddress, word_t value)
 {
+	if (virtualAddress >= VIRTUAL_MEMORY_SIZE)
+	{
+		return 0;
+	}
+	////////////////////////
+	uint64_t newAddress, frame = virtualAddress, offset = frame % (int) pow(2, OFFSET_WIDTH);
+	bool flag = false;
+	word_t path[TABLES_DEPTH + 1];
+	path[0] = 0;
+	for (int i = 0; i < TABLES_DEPTH; ++i)
+	{
+		int x = pow(2, OFFSET_WIDTH * (TABLES_DEPTH - i));  // todo change to double or not?
+		int j = frame / x;
+		frame %= x;
+		PMread(PAGESIZE * path[i] + j, &path[i + 1]);
+		if (path[i + 1] == 0) //todo did you mean this or I have to add "!" ?
+		{
+			PMwrite(PAGE_SIZE * path[i] + j, frameReturner(virtualAddress, path, i + 1));
+			flag = true;
+		}
+	}
+	if (flag)
+	{
+		PMrestore(path[TABLES_DEPTH], virtualAddress / PAGE_SIZE);
+	}
+	newAddress = PAGE_SIZE * path[TABLES_DEPTH] + offset;
+	////////////////////////
+	PMwrite(newAddress, value);
 	return 1;
 }
 
