@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g -Wl,--enable-auto-import CMakeFiles/ex4Tests_SingleTable.dir/kb_tests.cpp.o -o ex4Tests_SingleTable.exe -Wl,--out-implib,libex4Tests_SingleTable.dll.a -Wl,--major-image-version,0,--minor-image-version,0  ../libSingleTableVirtualMemory.a ../lib/libgtest_maind.a ../lib/libgtestd.a 

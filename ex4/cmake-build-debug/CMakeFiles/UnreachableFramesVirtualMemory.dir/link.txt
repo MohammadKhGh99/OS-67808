@@ -1,0 +1,2 @@
+/usr/bin/ar.exe qc libUnreachableFramesVirtualMemory.a CMakeFiles/UnreachableFramesVirtualMemory.dir/VirtualMemory.cpp.o CMakeFiles/UnreachableFramesVirtualMemory.dir/PhysicalMemory.cpp.o
+/usr/bin/ranlib.exe libUnreachableFramesVirtualMemory.a

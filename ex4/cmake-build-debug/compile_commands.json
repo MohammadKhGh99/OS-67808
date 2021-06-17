@@ -1,0 +1,112 @@
+[
+{
+  "directory": "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug",
+  "command": "/usr/bin/c++.exe -DINC_TESTING_CODE -DUNREACHABLE_FRAMES_CONSTANTS  -g -Wall -Wextra -g -O0 -std=gnu++11 -o CMakeFiles/UnreachableFramesVirtualMemory.dir/VirtualMemory.cpp.o -c \"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/VirtualMemory.cpp\"",
+  "file": "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/VirtualMemory.cpp"
+},
+{
+  "directory": "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug",
+  "command": "/usr/bin/c++.exe -DINC_TESTING_CODE -DUNREACHABLE_FRAMES_CONSTANTS  -g -Wall -Wextra -g -O0 -std=gnu++11 -o CMakeFiles/UnreachableFramesVirtualMemory.dir/PhysicalMemory.cpp.o -c \"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/PhysicalMemory.cpp\"",
+  "file": "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/PhysicalMemory.cpp"
+},
+{
+  "directory": "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug",
+  "command": "/usr/bin/c++.exe -DINC_TESTING_CODE -DSINGLE_TABLE_CONSTANTS  -g -Wall -Wextra -g -O0 -std=gnu++11 -o CMakeFiles/SingleTableVirtualMemory.dir/VirtualMemory.cpp.o -c \"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/VirtualMemory.cpp\"",
+  "file": "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/VirtualMemory.cpp"
+},
+{
+  "directory": "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug",
+  "command": "/usr/bin/c++.exe -DINC_TESTING_CODE -DSINGLE_TABLE_CONSTANTS  -g -Wall -Wextra -g -O0 -std=gnu++11 -o CMakeFiles/SingleTableVirtualMemory.dir/PhysicalMemory.cpp.o -c \"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/PhysicalMemory.cpp\"",
+  "file": "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/PhysicalMemory.cpp"
+},
+{
+  "directory": "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug",
+  "command": "/usr/bin/c++.exe -DINC_TESTING_CODE -DTEST_CONSTANTS  -g -Wall -Wextra -g -O0 -std=gnu++11 -o CMakeFiles/TestVirtualMemory.dir/VirtualMemory.cpp.o -c \"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/VirtualMemory.cpp\"",
+  "file": "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/VirtualMemory.cpp"
+},
+{
+  "directory": "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug",
+  "command": "/usr/bin/c++.exe -DINC_TESTING_CODE -DTEST_CONSTANTS  -g -Wall -Wextra -g -O0 -std=gnu++11 -o CMakeFiles/TestVirtualMemory.dir/PhysicalMemory.cpp.o -c \"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/PhysicalMemory.cpp\"",
+  "file": "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/PhysicalMemory.cpp"
+},
+{
+  "directory": "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug",
+  "command": "/usr/bin/c++.exe -DINC_TESTING_CODE -DNO_EVICTION_CONSTANTS  -g -Wall -Wextra -g -O0 -std=gnu++11 -o CMakeFiles/NoEvictionVirtualMemory.dir/VirtualMemory.cpp.o -c \"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/VirtualMemory.cpp\"",
+  "file": "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/VirtualMemory.cpp"
+},
+{
+  "directory": "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug",
+  "command": "/usr/bin/c++.exe -DINC_TESTING_CODE -DNO_EVICTION_CONSTANTS  -g -Wall -Wextra -g -O0 -std=gnu++11 -o CMakeFiles/NoEvictionVirtualMemory.dir/PhysicalMemory.cpp.o -c \"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/PhysicalMemory.cpp\"",
+  "file": "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/PhysicalMemory.cpp"
+},
+{
+  "directory": "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug",
+  "command": "/usr/bin/c++.exe -DINC_TESTING_CODE -DNORMAL_CONSTANTS  -g -Wall -Wextra -g -O0 -std=gnu++11 -o CMakeFiles/VirtualMemory.dir/VirtualMemory.cpp.o -c \"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/VirtualMemory.cpp\"",
+  "file": "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/VirtualMemory.cpp"
+},
+{
+  "directory": "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug",
+  "command": "/usr/bin/c++.exe -DINC_TESTING_CODE -DNORMAL_CONSTANTS  -g -Wall -Wextra -g -O0 -std=gnu++11 -o CMakeFiles/VirtualMemory.dir/PhysicalMemory.cpp.o -c \"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/PhysicalMemory.cpp\"",
+  "file": "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/PhysicalMemory.cpp"
+},
+{
+  "directory": "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug",
+  "command": "/usr/bin/c++.exe -DINC_TESTING_CODE -DOFFSET_DIFFERENT_FROM_INDEX  -g -Wall -Wextra -g -O0 -std=gnu++11 -o CMakeFiles/OffsetDifferentThanIndexMemory.dir/VirtualMemory.cpp.o -c \"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/VirtualMemory.cpp\"",
+  "file": "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/VirtualMemory.cpp"
+},
+{
+  "directory": "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug",
+  "command": "/usr/bin/c++.exe -DINC_TESTING_CODE -DOFFSET_DIFFERENT_FROM_INDEX  -g -Wall -Wextra -g -O0 -std=gnu++11 -o CMakeFiles/OffsetDifferentThanIndexMemory.dir/PhysicalMemory.cpp.o -c \"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/PhysicalMemory.cpp\"",
+  "file": "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/PhysicalMemory.cpp"
+},
+{
+  "directory": "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug/tests",
+  "command": "/usr/bin/c++.exe -DINC_TESTING_CODE -DSINGLE_TABLE_CONSTANTS -I\"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/tests/..\" -isystem \"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug/tests/googletest-src/googletest/include\" -isystem \"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug/tests/googletest-src/googletest\" -g -Wall -Wextra -g -O0 -std=gnu++11 -o CMakeFiles/ex4Tests_SingleTable.dir/kb_tests.cpp.o -c \"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/tests/kb_tests.cpp\"",
+  "file": "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/tests/kb_tests.cpp"
+},
+{
+  "directory": "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug/tests",
+  "command": "/usr/bin/c++.exe -DINC_TESTING_CODE -DOFFSET_DIFFERENT_FROM_INDEX -I\"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/tests/..\" -isystem \"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug/tests/googletest-src/googletest/include\" -isystem \"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug/tests/googletest-src/googletest\" -g -Wall -Wextra -g -O0 -std=gnu++11 -o CMakeFiles/ex4Tests_OffsetDifferentThanIndex.dir/kb_tests.cpp.o -c \"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/tests/kb_tests.cpp\"",
+  "file": "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/tests/kb_tests.cpp"
+},
+{
+  "directory": "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug/tests",
+  "command": "/usr/bin/c++.exe -DINC_TESTING_CODE -DNORMAL_CONSTANTS -I\"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/tests/..\" -isystem \"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug/tests/googletest-src/googletest/include\" -isystem \"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug/tests/googletest-src/googletest\" -g -Wall -Wextra -g -O0 -std=gnu++11 -o CMakeFiles/ex4Tests_NormalConstants.dir/kb_tests.cpp.o -c \"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/tests/kb_tests.cpp\"",
+  "file": "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/tests/kb_tests.cpp"
+},
+{
+  "directory": "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug/tests",
+  "command": "/usr/bin/c++.exe -DINC_TESTING_CODE -DTEST_CONSTANTS -I\"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/tests/..\" -isystem \"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug/tests/googletest-src/googletest/include\" -isystem \"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug/tests/googletest-src/googletest\" -g -Wall -Wextra -g -O0 -std=gnu++11 -o CMakeFiles/ex4Tests_SmallConstants.dir/kb_tests.cpp.o -c \"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/tests/kb_tests.cpp\"",
+  "file": "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/tests/kb_tests.cpp"
+},
+{
+  "directory": "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug/tests",
+  "command": "/usr/bin/c++.exe -DINC_TESTING_CODE -DNO_EVICTION_CONSTANTS -I\"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/tests/..\" -isystem \"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug/tests/googletest-src/googletest/include\" -isystem \"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug/tests/googletest-src/googletest\" -g -Wall -Wextra -g -O0 -std=gnu++11 -o CMakeFiles/ex4Tests_NoEviction.dir/kb_tests.cpp.o -c \"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/tests/kb_tests.cpp\"",
+  "file": "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/tests/kb_tests.cpp"
+},
+{
+  "directory": "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug/tests",
+  "command": "/usr/bin/c++.exe -DINC_TESTING_CODE -DUNREACHABLE_FRAMES_CONSTANTS -I\"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/tests/..\" -isystem \"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug/tests/googletest-src/googletest/include\" -isystem \"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug/tests/googletest-src/googletest\" -g -Wall -Wextra -g -O0 -std=gnu++11 -o CMakeFiles/ex4Tests_UnreachableFrames.dir/kb_tests.cpp.o -c \"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/tests/kb_tests.cpp\"",
+  "file": "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/tests/kb_tests.cpp"
+},
+{
+  "directory": "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug/tests/googletest-build/googlemock",
+  "command": "/usr/bin/c++.exe  -I\"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug/tests/googletest-src/googlemock/include\" -I\"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug/tests/googletest-src/googlemock\" -isystem \"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug/tests/googletest-src/googletest/include\" -isystem \"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug/tests/googletest-src/googletest\" -g -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock.dir/src/gmock-all.cc.o -c \"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug/tests/googletest-src/googlemock/src/gmock-all.cc\"",
+  "file": "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug/tests/googletest-src/googlemock/src/gmock-all.cc"
+},
+{
+  "directory": "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug/tests/googletest-build/googlemock",
+  "command": "/usr/bin/c++.exe  -isystem \"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug/tests/googletest-src/googlemock/include\" -isystem \"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug/tests/googletest-src/googlemock\" -isystem \"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug/tests/googletest-src/googletest/include\" -isystem \"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug/tests/googletest-src/googletest\" -g -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c \"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug/tests/googletest-src/googlemock/src/gmock_main.cc\"",
+  "file": "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug/tests/googletest-src/googlemock/src/gmock_main.cc"
+},
+{
+  "directory": "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug/tests/googletest-build/googletest",
+  "command": "/usr/bin/c++.exe  -I\"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug/tests/googletest-src/googletest/include\" -I\"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug/tests/googletest-src/googletest\" -g -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c \"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug/tests/googletest-src/googletest/src/gtest-all.cc\"",
+  "file": "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug/tests/googletest-src/googletest/src/gtest-all.cc"
+},
+{
+  "directory": "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug/tests/googletest-build/googletest",
+  "command": "/usr/bin/c++.exe  -isystem \"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug/tests/googletest-src/googletest/include\" -isystem \"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug/tests/googletest-src/googletest\" -g -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c \"/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug/tests/googletest-src/googletest/src/gtest_main.cc\"",
+  "file": "/cygdrive/c/Users/m7mdg/Documents/Studies/Year 3/Semester b/67808 Operating Systems/ex4/cmake-build-debug/tests/googletest-src/googletest/src/gtest_main.cc"
+}
+]

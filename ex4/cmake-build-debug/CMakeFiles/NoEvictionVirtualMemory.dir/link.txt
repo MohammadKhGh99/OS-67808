@@ -1,0 +1,2 @@
+/usr/bin/ar.exe qc libNoEvictionVirtualMemory.a CMakeFiles/NoEvictionVirtualMemory.dir/VirtualMemory.cpp.o CMakeFiles/NoEvictionVirtualMemory.dir/PhysicalMemory.cpp.o
+/usr/bin/ranlib.exe libNoEvictionVirtualMemory.a

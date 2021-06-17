@@ -1,0 +1,2 @@
+/usr/bin/ar.exe qc libOffsetDifferentThanIndexMemory.a CMakeFiles/OffsetDifferentThanIndexMemory.dir/VirtualMemory.cpp.o CMakeFiles/OffsetDifferentThanIndexMemory.dir/PhysicalMemory.cpp.o
+/usr/bin/ranlib.exe libOffsetDifferentThanIndexMemory.a

@@ -1,0 +1,2 @@
+/usr/bin/ar.exe qc libVirtualMemory.a CMakeFiles/VirtualMemory.dir/VirtualMemory.cpp.o CMakeFiles/VirtualMemory.dir/PhysicalMemory.cpp.o
+/usr/bin/ranlib.exe libVirtualMemory.a
