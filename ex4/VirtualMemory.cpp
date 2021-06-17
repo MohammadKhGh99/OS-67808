@@ -7,7 +7,7 @@ word_t frameReturner(uint64_t virtualAddress, word_t *path, int index);
 void frameFinding(uint64_t table, uint64_t index, word_t *path, uint64_t *emptyPage, uint64_t *array, int depth = 0,
 				  uint64_t frame = 0, uint64_t page = 0, uint64_t parent = 0);
 int distance(uint64_t firstPage, uint64_t secondPage);
-
+// ------------------ Functions Declarations (End) ------------------ //
 void clearTable(uint64_t frameIndex)
 {
 	for (uint64_t i = 0; i < PAGE_SIZE; ++i)
@@ -192,3 +192,4 @@ int distance(uint64_t firstPage, uint64_t secondPage)
 	return x >= y ? y : x;
 }
 
+// ------------------ Helping Functions (End) ------------------ //
